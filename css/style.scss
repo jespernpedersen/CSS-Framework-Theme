@@ -1,0 +1,51 @@
+/* Imports */
+
+@import "../node_modules/bulma/bulma.sass";
+
+/* Browser Icons */
+
+$browser_icon_svg_height: 56px;
+$browser_icon_width: 150px;
+$margin_center: 0 auto;
+$content_border: 1px solid #ededed;
+$browser_padding: 10px 15px;
+
+/* Titles */
+
+$title_padding: 40px 20px;
+
+/* Custom Styling */
+
+img {
+    max-width: 100%;
+}
+
+.browsers .browser-block {
+    text-align: center;
+    max-width: $browser_icon_width;
+    margin: $margin_center;
+}
+
+.browsers .browser-name {
+    margin-top: 15px;
+}
+
+.section .section-title-wrapper {
+    position: relative;
+    padding: 40px 20px;
+}
+
+.browsers .browser-block .browser-name {
+    background: white;
+    color: #999;
+    font-weight: 500;
+    padding: $browser_padding;
+    margin: 0;
+    border-radius: 8px;
+    border: $content_border;
+}
+
+.browsers .browser-block .browser-icon {
+    height: $browser_icon_svg_height;
+    margin: 10px 0;
+}
