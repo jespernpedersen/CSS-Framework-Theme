@@ -30,10 +30,7 @@
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
-
-/* Animation Imports */
-
-@import "../node_modules/bulma/sass/utilities/animations.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
 
 /* Custom Imports */
 
@@ -124,15 +121,20 @@ img {
 
 .navbar-wrapper.navbar-light .navbar-item,
 .navbar-wrapper.navbar-light .navbar-link {
-    color: #fff;
+    color: white;
+}
+
+.navbar-wrapper.navbar-light .navbar-dropdown .navbar-item,
+.navbar-wrapper.navbar-light .navbar-dropdown .navbar-link {
+    color: black;
 }
 
 .hero-caption .title.big-landing-title {
-    color: #fff;
+    color: white;
 }
 
 .light-text {
-    color: #fff !important;
+    color: white !important;
 }
 
 .hero-caption {
@@ -150,4 +152,8 @@ img {
 
 .navbar {
     padding: 15px 0;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: white;
 }
