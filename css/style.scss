@@ -1,6 +1,44 @@
-/* Imports */
+/* 
+------------------------------------------------------------------
+    Imports
+------------------------------------------------------------------
+*/
 
-@import "../node_modules/bulma/bulma.sass";
+
+/* Init Bulma Import */
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+/* Base */
+
+@import "../node_modules/bulma/sass/base/generic.sass";
+@import "../node_modules/bulma/sass/base/helpers.sass";
+@import "../node_modules/bulma/sass/base/minireset.sass";
+
+/* Grid Imports */
+
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+
+/* Header Imports */
+
+@import "../node_modules/bulma/sass/components/navbar.sass";
+
+/* Element Imports */
+
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+
+/* Custom Imports */
+
+
+/* 
+------------------------------------------------------------------
+    Custom Variables 
+------------------------------------------------------------------
+*/
+
 
 /* Browser Icons */
 
@@ -14,7 +52,11 @@ $browser_padding: 10px 15px;
 
 $title_padding: 40px 20px;
 
-/* Custom Styling */
+/* 
+------------------------------------------------------------------
+    Custom Styling
+------------------------------------------------------------------
+*/
 
 img {
     max-width: 100%;
