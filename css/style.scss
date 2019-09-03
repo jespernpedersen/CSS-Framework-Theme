@@ -70,7 +70,7 @@ $gradient_bg: linear-gradient(45deg, #334791, #4d94bf);
 /* CMS Colors */
 
 $wordpress_bg: #45a3c3;
-$joomla_bg: #333;
+$joomla_bg: #f27042;
 $drupal_bg: #222;
 
 /* 
@@ -217,10 +217,14 @@ img {
     color: white;
 }
 
-.has-wordpress-background {
+.has-wordpress-background,
+.has-joomla-background,
+{
     color: white;
 }
 
+.has-joomla-background .title,
+.has-joomla-background .subtitle,
 .has-wordpress-background .title,
 .has-wordpress-background .subtitle,
 .has-primary-background .title,
@@ -298,9 +302,19 @@ footer {
     cursor: pointer;
 }
 
+.has-joomla-background,
+.joomla-features .square-icon-box .icon-box-wrapper .icon-box {
+    background: $joomla_bg;
+}
+
 .has-wordpress-background,
 .wordpress-features .square-icon-box .icon-box-wrapper .icon-box {
     background: $wordpress_bg;
+}
+
+.has-drupal-background,
+.drupal-features .square-icon-box .icon-box-wrapper .icon-box {
+    background: $drupal_bg;
 }
 
 .square-icon-box .icon-box-wrapper.joomla .icon-box {
@@ -322,6 +336,18 @@ footer {
 
 .square-icon-box.secondary .icon-box:after {
     border: 2px solid $blue_bg;
+}
+
+.wordpress-features .square-icon-box .icon-box:after {
+    border-color: $wordpress_bg;
+}
+
+.joomla-features .square-icon-box .icon-box:after {
+    border-color: $joomla_bg;
+}
+
+.drupal-features .square-icon-box .icon-box:after {
+    border-color: $drupal_bg;
 }
 
 .square-icon-box:hover .icon-box-wrapper .icon-box:after {
