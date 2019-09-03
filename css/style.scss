@@ -71,7 +71,7 @@ $gradient_bg: linear-gradient(45deg, #334791, #4d94bf);
 
 $wordpress_bg: #45a3c3;
 $joomla_bg: #f27042;
-$drupal_bg: #222;
+$drupal_bg: #0678be;
 
 /* 
 
@@ -219,7 +219,7 @@ img {
 
 .has-wordpress-background,
 .has-joomla-background,
-{
+.has-drupal-background {
     color: white;
 }
 
@@ -228,7 +228,9 @@ img {
 .has-wordpress-background .title,
 .has-wordpress-background .subtitle,
 .has-primary-background .title,
-.has-primary-background .subtitle {
+.has-primary-background .subtitle,
+.has-drupal-background .title,
+.has-drupal-background .subtitle {
     color: white;
 }
 

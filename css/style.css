@@ -6948,7 +6948,8 @@ img {
   color: white; }
 
 .has-wordpress-background,
-.has-joomla-background {
+.has-joomla-background,
+.has-drupal-background {
   color: white; }
 
 .has-joomla-background .title,
@@ -6956,7 +6957,9 @@ img {
 .has-wordpress-background .title,
 .has-wordpress-background .subtitle,
 .has-primary-background .title,
-.has-primary-background .subtitle {
+.has-primary-background .subtitle,
+.has-drupal-background .title,
+.has-drupal-background .subtitle {
   color: white; }
 
 .footermenu li {
@@ -7029,13 +7032,13 @@ footer {
 
 .has-drupal-background,
 .drupal-features .square-icon-box .icon-box-wrapper .icon-box {
-  background: #222; }
+  background: #0678be; }
 
 .square-icon-box .icon-box-wrapper.joomla .icon-box {
   background: #f27042; }
 
 .square-icon-box .icon-box-wrapper.drupal .icon-box {
-  background: #222; }
+  background: #0678be; }
 
 .square-icon-box .icon-box-wrapper .icon-box i {
   font-size: 28px;
@@ -7057,7 +7060,7 @@ footer {
   border-color: #f27042; }
 
 .drupal-features .square-icon-box .icon-box:after {
-  border-color: #222; }
+  border-color: #0678be; }
 
 .square-icon-box:hover .icon-box-wrapper .icon-box:after {
   -webkit-transform: scale(0.92);
