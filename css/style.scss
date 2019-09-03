@@ -31,6 +31,7 @@
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
 
 /* Form */
 
@@ -88,6 +89,10 @@ $drupal_bg: #0678be;
 
 .no-padding-top {
     padding-top: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
 }
 
 
@@ -385,4 +390,33 @@ footer {
     padding: 0 10px;
     font-size: 14px;
     min-height: 62px;
+}
+
+
+/* Om Os */
+
+.hero-background {
+    background-image: url('../images/om-os-baggrund.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 80px;
+}
+
+.hero-background:before {
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+p+h3 {
+    margin-top: 50px;
+}
+
+.image+.image {
+    margin-top: 30px;
 }
