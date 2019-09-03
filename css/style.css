@@ -7204,6 +7204,9 @@ footer {
   background-position: top center;
   padding-bottom: 80px; }
 
+.private-policy .hero-background {
+  background-image: url("../images/privacy-policy-bg.png"); }
+
 .hero-background:before {
   content: "";
   background-color: black;
@@ -7218,3 +7221,10 @@ p + h3 {
 
 .image + .image {
   margin-top: 30px; }
+
+/* Privacy Policy */
+p + h2 {
+  margin-top: 50px; }
+
+ul + h2 {
+  margin-top: 50px; }
