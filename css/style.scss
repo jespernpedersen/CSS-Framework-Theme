@@ -157,3 +157,43 @@ img {
 .navbar-link:not(.is-arrowless)::after {
     border-color: white;
 }
+
+.has-subtitle {
+    margin-bottom: 0;
+}
+
+.has-gray-background {
+    background-color: #ebebeb;
+}
+
+.footermenu li {
+    display: inline-block;
+}
+
+footer .footermenu li {
+    float: left;
+    margin: 0 0px;
+    padding: 0 15px;
+    line-height: 16px;
+}
+
+.is-border-right {
+    border-right: 2px solid #464646;
+}
+
+.footermenu {
+    padding: 20px;
+}
+
+footer .footermenu {
+    padding-top: 3px;
+}
+
+footer .footermenu li a {
+    color: #464646;
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #ebebeb;
+}

@@ -5118,6 +5118,22 @@ button.dropdown-item {
   background-color: white;
   color: black; }
 
+.button.dark-btn {
+  background-color: #13313e;
+  color: white; }
+
+.button.dark-btn:hover {
+  border-color: #13313e;
+  background-color: white;
+  color: black; }
+
+p + .button,
+.button + .button {
+  margin-top: 20px; }
+
+.button + .button {
+  margin-left: 15px; }
+
 /* 
 ------------------------------------------------------------------
     Custom Variables 
@@ -5209,3 +5225,34 @@ img {
 
 .navbar-link:not(.is-arrowless)::after {
   border-color: white; }
+
+.has-subtitle {
+  margin-bottom: 0; }
+
+.has-gray-background {
+  background-color: #ebebeb; }
+
+.footermenu li {
+  display: inline-block; }
+
+footer .footermenu li {
+  float: left;
+  margin: 0 0px;
+  padding: 0 15px;
+  line-height: 16px; }
+
+.is-border-right {
+  border-right: 2px solid #464646; }
+
+.footermenu {
+  padding: 20px; }
+
+footer .footermenu {
+  padding-top: 3px; }
+
+footer .footermenu li a {
+  color: #464646; }
+
+footer {
+  padding-top: 30px;
+  background-color: #ebebeb; }
