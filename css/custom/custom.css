@@ -1,0 +1,53 @@
+/*! themes/_main.scss | Bulkit | CSS Ninja */
+/* ==========================================================================
+Main theme variables and styles (Main theme is used in "Startup Kit", in "Landing kit v1" and in all components pages)
+========================================================================== */
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Theme color variables
+1. Theme gradient
+2. Box shadows
+3. Pageloader
+4. Theme specific Hero
+=============================================================================
+***/
+/* ==========================================================================
+0. Theme color variables
+========================================================================== */
+/* ==========================================================================
+1. Theme gradient
+========================================================================== */
+/* ==========================================================================
+2. Box shadows
+========================================================================== */
+/* ==========================================================================
+3. Pageloader
+========================================================================== */
+.pageloader {
+  background-color: #7F00FF;
+  background: -webkit-gradient(linear, left bottom, left top, from(#7F00FF), to(#7F00FF)) !important;
+  background: -webkit-linear-gradient(bottom, #7F00FF, #7F00FF) !important;
+  background: -o-linear-gradient(bottom, #7F00FF, #7F00FF) !important;
+  background: linear-gradient(to top, #7F00FF, #7F00FF) !important; }
+
+/* ==========================================================================
+4. Theme specific Hero
+========================================================================== */
+.hero.is-theme-secondary,
+.section.is-theme-secondary {
+  background-color: #7F00FF;
+  background: -webkit-gradient(linear, left top, right top, from(#7F00FF), to(#7F00FF));
+  background: -webkit-linear-gradient(left, #7F00FF, #7F00FF);
+  background: -o-linear-gradient(left, #7F00FF, #7F00FF);
+  background: linear-gradient(to right, #7F00FF, #7F00FF);
+  background: -webkit-gradient(linear, left bottom, left top, from(#7F00FF), to(#7F00FF));
+  background: -webkit-linear-gradient(bottom, #7F00FF, #7F00FF);
+  background: -o-linear-gradient(bottom, #7F00FF, #7F00FF);
+  background: linear-gradient(to top, #7F00FF, #7F00FF); }
+  .hero.is-theme-secondary .title,
+  .section.is-theme-secondary .title {
+    color: #FFFFFF; }
+  .hero.is-theme-secondary .subtitle,
+  .section.is-theme-secondary .subtitle {
+    color: #FFFFFF; }

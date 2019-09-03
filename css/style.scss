@@ -32,9 +32,15 @@
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/components/dropdown.sass";
 
+/* Form */
+
+@import "../node_modules/bulma/sass/form/_all.sass";
+
 /* Custom Imports */
 
 @import "custom/button.sass";
+@import "custom/flex-card.scss";
+@import "custom/tools.scss";
 
 /* 
 ------------------------------------------------------------------
@@ -55,15 +61,63 @@ $browser_padding: 10px 15px;
 
 $title_padding: 40px 20px;
 
+/* Colors */
+
+$blue_bg: #4d94bf;
+$gray_bg: #ebebeb;
+$gradient_bg: linear-gradient(45deg, #334791, #4d94bf);
+
+/* CMS Colors */
+
+$wordpress_bg: #45a3c3;
+$joomla_bg: #333;
+$drupal_bg: #222;
+
 /* 
+
+
+/* Paddings */
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.huge-pb {
+    padding-bottom: 150px;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+
+/*
 ------------------------------------------------------------------
     Custom Styling
 ------------------------------------------------------------------
 */
 
+
+/* Form Custom */
+
+.control+.control {
+    margin-top: 28px;
+}
+
+button.button {
+    box-sizing: content-box;
+    padding: 5px 40px;
+}
+
+
+/* General */
+
 img {
     max-width: 100%;
 }
+
+
+/* Browsers */
 
 .browsers .browser-block {
     text-align: center;
@@ -97,11 +151,7 @@ img {
 
 .hero.is-theme-primary,
 .section.is-theme-primary {
-    background: linear-gradient(45deg, #334791, #4d94bf);
-}
-
-.huge-pb {
-    padding-bottom: 150px;
+    background: $gradient_bg;
 }
 
 .hero.hero-wavy:before {
@@ -113,10 +163,6 @@ img {
     position: absolute;
     bottom: -1px;
     left: 0;
-}
-
-.hero.is-theme-primary {
-    background-color: rgba(77, 148, 191, 1);
 }
 
 .navbar-wrapper.navbar-light .navbar-item,
@@ -163,7 +209,23 @@ img {
 }
 
 .has-gray-background {
-    background-color: #ebebeb;
+    background-color: $gray_bg;
+}
+
+.has-primary-background {
+    background-color: $blue_bg;
+    color: white;
+}
+
+.has-wordpress-background {
+    color: white;
+}
+
+.has-wordpress-background .title,
+.has-wordpress-background .subtitle,
+.has-primary-background .title,
+.has-primary-background .subtitle {
+    color: white;
 }
 
 .footermenu li {
@@ -196,4 +258,103 @@ footer .footermenu li a {
 footer {
     padding-top: 30px;
     background-color: #ebebeb;
+}
+
+.landing-title.is-big {
+    font-size: 4rem;
+}
+
+.landing-title {
+    color: #fff;
+}
+
+.xl-huge-pb {
+    padding-bottom: 250px;
+}
+
+.wavy-flipped:before {
+    transform: scaleX(-1);
+}
+
+
+/* Features */
+
+.square-icon-box .icon-box-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.square-icon-box .icon-box-wrapper .icon-box {
+    width: 60px;
+    height: 60px;
+    background: $blue_bg;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.has-wordpress-background,
+.wordpress-features .square-icon-box .icon-box-wrapper .icon-box {
+    background: $wordpress_bg;
+}
+
+.square-icon-box .icon-box-wrapper.joomla .icon-box {
+    background: $joomla_bg;
+}
+
+.square-icon-box .icon-box-wrapper.drupal .icon-box {
+    background: $drupal_bg;
+}
+
+.square-icon-box .icon-box-wrapper .icon-box i {
+    font-size: 28px;
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square-icon-box.secondary .icon-box:after {
+    border: 2px solid $blue_bg;
+}
+
+.square-icon-box:hover .icon-box-wrapper .icon-box:after {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.square-icon-box .icon-box-wrapper .icon-box:after {
+    width: 76px;
+    height: 76px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: -8px;
+    opacity: 0.8;
+    border-radius: 4px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
+
+.square-icon-box.is-landing .box-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #444F60;
+    margin-top: 5px;
+}
+
+.square-icon-box .box-text {
+    color: #A9ABAC;
+    padding: 0 10px;
+    font-size: 14px;
+    min-height: 62px;
 }
