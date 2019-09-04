@@ -17,6 +17,7 @@ joomla.html
 drupal.html
 om-os.html
 privatlivspolitik.html
+kontakt.html
 
 
 

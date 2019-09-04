@@ -6953,7 +6953,8 @@ TABLE OF CONTENTS
 */
 /* Frontpage */
 .frontpage-image {
-  max-width: 700px; }
+  max-width: 600px;
+  float: right; }
 
 /* Form Custom */
 .control + .control {
