@@ -19,15 +19,21 @@
 <body>
     <!-- Header -->
     <div class="hero hero-wavy is-relative is-theme-primary huge-pb">
-        <nav class="navbar navbar-wrapper navbar-fade navbar-light is-transparent light-text">
+        <header class="navbar navbar-wrapper navbar-fade navbar-light is-transparent light-text">
             <div class="container">
                 <!-- Logo -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
                         <img src="images/ecclesia-logo.png" alt="Logo" class="Ecclesia Logo" />
                     </a>
+
+                    <a role="button" class="navbar-burger" id="mobile-menu-trigger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
-                <div class="navbar-menu">
+                <nav class="navbar-menu" id="mobile-menu">
                     <!-- Here we begin our navigation -->
                     <div class="navbar-start">
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -63,9 +69,10 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </header>
+        <!-- Headed End -->
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="columns is-vcentered">
@@ -227,6 +234,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

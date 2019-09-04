@@ -86,7 +86,7 @@ $magento_bg: #f26322;
 }
 
 .huge-pb {
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 .no-padding-top {
@@ -459,4 +459,39 @@ p+h2 {
 
 ul+h2 {
     margin-top: 50px;
+}
+
+
+/* Mobile Menu */
+
+.navbar-burger,
+.navbar-burger:hover,
+.navbar-burger:active {
+    color: white;
+}
+
+.navbar-menu.is-active {
+    background-color: $gray_bg;
+}
+
+.navbar-wrapper.navbar-light .is-active .navbar-item,
+.navbar-wrapper.navbar-light .is-active .navbar-link {
+    color: $darker_grey;
+}
+
+@media only screen and (max-width: 767px) {
+    .huge-pb {
+        padding-bottom: 100px;
+    }
+    footer .footermenu {
+        padding: 0;
+        float: none !important;
+    }
+    footer p,
+    footer ul {
+        text-align: center;
+    }
+    footer .footermenu li {
+        float: none;
+    }
 }

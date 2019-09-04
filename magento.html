@@ -21,17 +21,24 @@
 </head>
 
 <body>
+
     <!-- Header -->
-    <div class="hero hero-wavy wavy-flipped is-relative is-theme-primary xl-huge-pb">
-        <nav class="navbar navbar-wrapper navbar-fade navbar-light is-transparent light-text">
+    <div class="hero hero-wavy wavy-flipped is-relative is-theme-primary huge-pb">
+        <header class="navbar navbar-wrapper navbar-fade navbar-light is-transparent light-text">
             <div class="container">
                 <!-- Logo -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
-                        <img src="images/ecclesia-logo.png" class="Ecclesia Logo" />
+                        <img src="images/ecclesia-logo.png" alt="Logo" class="Ecclesia Logo" />
+                    </a>
+
+                    <a role="button" class="navbar-burger" id="mobile-menu-trigger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div class="navbar-menu">
+                <nav class="navbar-menu" id="mobile-menu">
                     <!-- Here we begin our navigation -->
                     <div class="navbar-start">
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -51,11 +58,10 @@
                                 </a>
                             </div>
                         </div>
-                        </a>
-                        <a class="navbar-item" target="_blank" href="https://jespernpedersen.dk/cases" title="Se her hvad du kan forvente">
+                        <a class="navbar-item" target="_blank" href="https://jespernpedersen.dk/cases" title="Læs mere om de forskellige cases vi har arbejdet med før">
                         Cases
                         </a>
-                        <a class="navbar-item" href="om-os.html" title="Læs mere om hvem vi er her">
+                        <a class="navbar-item" href="om-os.html">
                         Om os
                         </a>
                     </div>
@@ -68,9 +74,10 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </header>
+        <!-- Headed End -->
         <div class="hero-body">
             <div class="container">
                 <div class="section-title-wrapper has-text-centered">
@@ -310,6 +317,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
