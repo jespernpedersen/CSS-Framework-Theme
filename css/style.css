@@ -7054,9 +7054,12 @@ img {
 
 .has-wordpress-background,
 .has-joomla-background,
-.has-drupal-background {
+.has-drupal-background,
+.has-magento-background {
   color: white; }
 
+.has-magento-background .title,
+.has-magento-background .subtitle,
 .has-joomla-background .title,
 .has-joomla-background .subtitle,
 .has-wordpress-background .title,
@@ -7135,6 +7138,10 @@ footer {
 .wordpress-features .square-icon-box .icon-box-wrapper .icon-box {
   background: #45a3c3; }
 
+.has-magento-background,
+.magento-features .square-icon-box .icon-box-wrapper .icon-box {
+  background: #f26322; }
+
 .has-drupal-background,
 .drupal-features .square-icon-box .icon-box-wrapper .icon-box {
   background: #0678be; }
@@ -7166,6 +7173,9 @@ footer {
 
 .drupal-features .square-icon-box .icon-box:after {
   border-color: #0678be; }
+
+.magento-features .square-icon-box .icon-box:after {
+  border-color: #f26322; }
 
 .square-icon-box:hover .icon-box-wrapper .icon-box:after {
   -webkit-transform: scale(0.92);
