@@ -67,6 +67,7 @@ $title_padding: 40px 20px;
 $blue_bg: #4d94bf;
 $gray_bg: #ebebeb;
 $gradient_bg: linear-gradient(45deg, #334791, #4d94bf);
+$darker_grey: #464646;
 
 /* CMS Colors */
 
@@ -101,6 +102,13 @@ $drupal_bg: #0678be;
     Custom Styling
 ------------------------------------------------------------------
 */
+
+
+/* Frontpage */
+
+.frontpage-image {
+    max-width: 700px;
+}
 
 
 /* Form Custom */
@@ -158,6 +166,9 @@ img {
 .section.is-theme-primary {
     background: $gradient_bg;
 }
+
+
+/* Here we set the hero wavy, which has a white background but transparent wave which can be used dynamically to set a wavy background */
 
 .hero.hero-wavy:before {
     background: transparent url(../images/wavy-alt.png) no-repeat scroll 0 bottom/100% auto;
@@ -251,7 +262,7 @@ footer .footermenu li {
 }
 
 .is-border-right {
-    border-right: 2px solid #464646;
+    border-right: 2px solid $darker_grey;
 }
 
 .footermenu {
@@ -263,7 +274,7 @@ footer .footermenu {
 }
 
 footer .footermenu li a {
-    color: #464646;
+    color: $darker_grey;
 }
 
 footer {
